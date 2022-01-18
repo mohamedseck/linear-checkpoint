@@ -1,0 +1,18 @@
+const arr1 = [2, 3, 4, 5];
+const arr2 = [4, 3, 3, 1];
+const produceAndAdd = (arr1 = [], arr2 = []) => {
+   let sum = 0;
+   for(let i=0; i < arr1.length; i++) {
+      const product = (arr1[i] + arr2[i]);
+      sum += product;
+   };
+   return sum;
+};
+console.log(produceAndAdd(arr1, arr2));
+
+var arr=[arr1, arr2];
+var ans=0;
+arr.map(ele=>{
+	ans+=ele
+})
+console.log(ans);
